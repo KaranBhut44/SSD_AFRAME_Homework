@@ -1,3 +1,4 @@
+# GitHub pages link: https://karanbhut44.github.io/SSD_AFRAME_Homework/
 ## Instructions: 
 Build a WebVR Scene using AFrame JavaScript Library and submit your files in Moodle.
 
@@ -14,5 +15,7 @@ Submission Notes:
 
 ## aframejs.html
  - This is the example file provided with question.
-## 2020202015.html
+
+## index.html
  - This is solution file(WebVR Scene) submitted.
+ - Changed name rollnumber.html to index.html, so that github pages can automatically detect source.
