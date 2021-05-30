@@ -1,0 +1,24 @@
+<html><head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body style="background-color:black;">
+    <a-assets>
+      <img id="glass" crossorigin="anonymous" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhbpfWPwlvkCP7xAgq00gumbFRQ6q-eUNH4a9LUrIXs--J7ac"> 
+      <img id="rust" crossorigin="anonymous" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeEo19vWWDeLx2o9a0ypIUv4qvpDAWcRa_AAo3UI2-nF_2Nus"> 
+    </a-assets>
+    <a-scene class="fullscreen"><canvas class="a-canvas" data-aframe-canvas="true" width="375" height="187"></canvas>
+      <a-entity animation="property:scale;dir:alternate;dur:100;to:1.1 1.1 1.1;loop:true" scale="1.01 1.01 1.01">
+      <a-cylinder color="#ff9966" position="-1 1.25 -3" rotation="0 45 0" radius="0.26" height="1.5" src="#rust"></a-cylinder>
+      <a-cone color="#ccffcc" position="-1 2.25 -3" width="1" radius-bottom="0.3" height="0.5" rotation="0 0 0" src="#glass"></a-cone></a-entity>
+      <a-torus color="#ffccff" position="0.96 0.85 -3" radius="0.9" rotation="70 80 75.89505021964646" src="#glass" radius-tubular="0.02" animation="property: rotation; to: 70 80 360; dir: reverse; loop: true; dur: 8000" material="" geometry=""></a-torus>
+      <a-sphere color="violet" position="1 0.8 -3" rotation="0 75.89505021964646 0" src="#rust" radius="0.65" animation="property: rotation; to: 0 360 0; dir: reverse; loop: true; dur: 8000" material="" geometry=""></a-sphere>
+      <a-entity particle-system="velocityValue:0 20 0;preset:default;color:orange;particleCount:1000" position="-1 0.5 -3" rotation="-11.173 -11.688 179.909"></a-entity>
+    </a-scene>
+</body>
+</html>
+
+
+
+
